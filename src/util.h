@@ -11,7 +11,7 @@
 
 typedef void *GLeglImageOES;
 typedef void (*PFNGLEGLIMAGETARGETTEXTURE2DOESPROC)(GLenum target, GLeglImageOES image);
-PFNGLEGLIMAGETARGETTEXTURE2DOESPROC glEGLImageTargetTexture2DOES;
+extern PFNGLEGLIMAGETARGETTEXTURE2DOESPROC glEGLImageTargetTexture2DOES;
 
 int texture2d_to_jpeg( GLuint tex, int level, const char* filename );
 int texture_2d_load_from_file( GLuint* tex, const char* filename );
