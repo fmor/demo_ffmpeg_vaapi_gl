@@ -429,7 +429,7 @@ EGLImage egl_create_image_from_va(VASurfaceID* _va_surface, VADisplay va_display
     va_surface_attrib.type = VASurfaceAttribPixelFormat;
     va_surface_attrib.flags = VA_SURFACE_ATTRIB_SETTABLE;
     va_surface_attrib.value.type = VAGenericValueTypeInteger;
-    va_surface_attrib.value.value.i = VA_FOURCC_RGBA;
+    va_surface_attrib.value.value.i = VA_FOURCC_BGRA;
 
     r = vaCreateSurfaces( va_display, VA_RT_FORMAT_RGB32, width, height, &va_surface, 1, &va_surface_attrib, 1 );
     if( r != VA_STATUS_SUCCESS )
